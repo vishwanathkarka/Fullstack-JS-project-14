@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f2f0;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+}
+header .logo img{
+    width:100px;
+    display: block;
+    margin: auto;
+}
+header .logo{
+   margin-left:100px;
+   z-index: 2;
+
+}
+header .nav-items .nav-item{
+    list-style: none;
+}
+header .nav-items{
+    display: flex;
+    justify-content: space-between;
+    gap:40px
+}
+.container >div >img{
+    position:absolute;
+    top:0;
+    width:28rem;
+    height:100vh;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+}
+
+.contain{
+    position:absolute;
+    left:500px;
+    display: flex;
+    justify-content: space-around;
+    gap:5rem;
+    flex-direction: column;
+}
+.top-contain{
+    display: flex;
+    gap:5rem;
+}
+.top-contain .crea{
+    font-size: 7rem;
+    font-family: "Merriweather";
+    color: transparent;
+    font-weight:700;
+    -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color: black;
+    line-height: 49px;
+}
+.top-contain .tivity{
+    font-size:5rem;
+    padding-left:100px;
+    font-family: "Merriweather";
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.top-contain .tivity h2::after{
+    content: "";
+    display: inline-block;
+    height:20px;
+    width:20px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.top-contain .ingredient p{
+font-size: 2rem;
+color:#898888;
+margin:20px 0px 0 20px;
+
+}
+
+.top-contain .social-icons{
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    font-size: 1.2rem;
+    position: absolute;
+    top:-20px;
+    right: 300px;
+}
+
+.top-right-contain{
+    display: flex;
+    gap:30px;
+    justify-content: end;
+}
+.right-contain .top-right-top{
+    display: flex;
+    gap:30px
+}
+.top-right-bottom {
+    color: white;
+    background-color: black;
+    padding:15px 100px;
+    position: absolute;
+    right:270px;
+}
+.top-right-contain-items{
+    display: flex;
+    flex-direction: column;
+   gap:30px;
+}
+
+.bottom-contain{
+display: flex;
+gap:90px;
+justify-content: space-between;
+flex: 2;
+}
+
+.bottom-left-contain{
+    color:#868686;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    position: relative;
+    width:300px;
+    margin-left:90px
+
+}
+.active-select{
+    color: black;
+}
+.bottom-left-contain .dot{
+content: "";
+display: block;
+height: 15px;
+width:15px;
+border-radius: 20px;
+
+
+}
+.bottom-left-contain div{
+display: flex;
+gap:20px;
+align-items: center;
+}
+.active-dot{
+background-color: black;
+}
+.dot-color{
+    background-color: #868686;
+}
+.bottom-left-contain .line{
+    position: absolute;
+height: 335px;
+width: 2px;
+left:7px;
+top:18px;
+background-color:  #868686;
+overflow: hidden;
+}
+.bottom-contain .Quotation-mark {
+font-size: 40px;
+}
+
+/* 
+.dancing-img img{
+ 
+    width: 7rem;
+    height: 90px;
+    display: block;
+  
+} */
+
+.bottom-contain .dancing-img img{
+    width: 18rem;
+    height: 160px;
+    object-fit: cover;
+    margin-top:40px ;
+   
+}
+header svg{
+    display: none;
+}
+
+.crea::after{
+    content: "";
+    display: block;
+    height:15px;
+    width:60px;
+    border:1.5px solid #868686;
+position: absolute;
+left:250px;
+top:20px
+}
+.bottom-right-item{
+    width:20rem;
+    margin-right:90px;
+}
+
+@media screen and (max-width:1282px) {
+    .bottom-left-contain{ 
+    margin-left:0px
+    }
+    .top-contain .social-icons{
+        right:100px;
+    }
+    .bottom-contain{
+        gap:0px;
+    }
+    .container >div >img{
+        width:20rem;
+    }
+    .contain{
+        left:400px;
+    }
+    .bottom-left-contain{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:1111px) {
+    .container >div >img{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .contain{
+        left:30px;
+    }
+    .contain{
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width:858px) {
+    .contain{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:661px) {
+    .top-contain .crea{
+        font-size: 5rem;
+    }
+    .top-contain .tivity{
+        font-size: 3rem;
+    }
+    .crea::after{
+        font-size: 1.5rem;
+    }
+    .crea::after{
+        left:150px
+    }
+    .bottom-left-contain{
+        bottom:-100px;
+        width:200px;
+    }
+    .top-right-bottom{
+        right:180px
+    }
+    header{
+        height: 15vh;
+    }
+    .top-contain .social-icons{
+        flex-direction: row;
+        right: 240px;
+    }
+    header .nav-items{
+        display: none;
+    }
+    header svg{
+        width: 30px;
+display: block;
+margin-right: 10px;
+    }
+}
+@media screen and (max-width:555px) {
+    /* .bottom-left-contain{
+        bottom: -370px;
+    } */
+
+
+.bottom-right-item p {
+    font-size: 0.5rem;
+    width: 90px;
+}
+.top-contain .ingredient p{
+    font-size:1rem
+}
+.top-contain .crea{
+    font-size: 4rem;
+}
+}
